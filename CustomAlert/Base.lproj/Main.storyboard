@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Acl-Fi-Aai">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom AlertVC-->
+        <scene sceneID="wAD-Al-adU">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WGN-fr-jzr" customClass="CustomAlertVC" customModule="CustomAlert" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MO1-0a-Y6c">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-Wi-WnP">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lG9-35-qBq">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20950549801453849" colorSpace="custom" customColorSpace="sRGB"/>
+                                <vibrancyEffect style="fill">
+                                    <blurEffect style="systemUltraThinMaterialDark"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UR7-TD-PxG">
+                                <rect key="frame" x="30" y="301.33333333333331" width="330" height="201.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Message Alert Message Alert Message Alert Message Alert Message Alert Message Alert Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPF-l8-0dC">
+                                        <rect key="frame" x="25" y="29.999999999999993" width="280" height="81.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ify-gn-9qt">
+                                        <rect key="frame" x="140" y="126.33333333333337" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sHB-NG-iSh"/>
+                                            <constraint firstAttribute="width" constant="50" id="scd-Sh-CiK"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="8MQ-6j-CCV"/>
+                                    <constraint firstItem="MPF-l8-0dC" firstAttribute="centerX" secondItem="UR7-TD-PxG" secondAttribute="centerX" id="F0x-HA-gri"/>
+                                    <constraint firstItem="Ify-gn-9qt" firstAttribute="top" secondItem="MPF-l8-0dC" secondAttribute="bottom" constant="15" id="GgN-UJ-3ge"/>
+                                    <constraint firstItem="Ify-gn-9qt" firstAttribute="centerX" secondItem="UR7-TD-PxG" secondAttribute="centerX" id="H1K-Tk-6P3"/>
+                                    <constraint firstItem="MPF-l8-0dC" firstAttribute="leading" secondItem="UR7-TD-PxG" secondAttribute="leading" constant="25" id="h3v-Jc-RBl"/>
+                                    <constraint firstItem="MPF-l8-0dC" firstAttribute="top" secondItem="UR7-TD-PxG" secondAttribute="top" constant="30" id="jpS-1h-GNb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ify-gn-9qt" secondAttribute="bottom" constant="25" id="t0r-cy-3Eu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UDf-e1-Fdh"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lGh-Wi-WnP" firstAttribute="top" secondItem="MO1-0a-Y6c" secondAttribute="top" id="EKy-l9-2is"/>
+                            <constraint firstItem="UR7-TD-PxG" firstAttribute="centerX" secondItem="MO1-0a-Y6c" secondAttribute="centerX" id="Ed3-jk-bpW"/>
+                            <constraint firstItem="UR7-TD-PxG" firstAttribute="centerY" secondItem="MO1-0a-Y6c" secondAttribute="centerY" constant="-20" id="LCA-de-4Y4"/>
+                            <constraint firstItem="lGh-Wi-WnP" firstAttribute="leading" secondItem="UDf-e1-Fdh" secondAttribute="leading" id="Oim-jh-eYU"/>
+                            <constraint firstAttribute="bottom" secondItem="lGh-Wi-WnP" secondAttribute="bottom" id="jpc-6e-QGq"/>
+                            <constraint firstItem="UDf-e1-Fdh" firstAttribute="trailing" secondItem="lGh-Wi-WnP" secondAttribute="trailing" id="tNQ-UA-vFL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Ify-gn-9qt" id="TpW-o5-Omx"/>
+                        <outlet property="alertMessage" destination="MPF-l8-0dC" id="EMS-le-lUC"/>
+                        <outlet property="alertView" destination="UR7-TD-PxG" id="f2J-dT-Erd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5c-Ej-Akk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.9275362318842" y="101.78571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xCC-im-V3w">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Acl-Fi-Aai" customClass="ViewController" customModule="CustomAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XF3-PL-Rn1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-Z7-vfY">
+                                <rect key="frame" x="40" y="147" width="310" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Jev-Ls-0ld"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-mL-Ns7">
+                                <rect key="frame" x="40" y="327" width="310" height="35"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check Alert"/>
+                                <connections>
+                                    <action selector="checkAlertButton:" destination="Acl-Fi-Aai" eventType="touchUpInside" id="ldy-4z-drc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L0F-jW-Sc3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NPU-Z7-vfY" firstAttribute="top" secondItem="L0F-jW-Sc3" secondAttribute="top" constant="100" id="2cK-rI-LZU"/>
+                            <constraint firstItem="1NB-mL-Ns7" firstAttribute="top" secondItem="NPU-Z7-vfY" secondAttribute="bottom" constant="30" id="DlD-cL-Kpv"/>
+                            <constraint firstItem="1NB-mL-Ns7" firstAttribute="centerX" secondItem="XF3-PL-Rn1" secondAttribute="centerX" id="axO-ay-Dfz"/>
+                            <constraint firstItem="NPU-Z7-vfY" firstAttribute="leading" secondItem="L0F-jW-Sc3" secondAttribute="leading" constant="40" id="f1H-mI-3IG"/>
+                            <constraint firstItem="NPU-Z7-vfY" firstAttribute="centerX" secondItem="XF3-PL-Rn1" secondAttribute="centerX" id="gBZ-y5-Fbo"/>
+                            <constraint firstItem="1NB-mL-Ns7" firstAttribute="leading" secondItem="L0F-jW-Sc3" secondAttribute="leading" constant="40" id="mPj-1t-Lf4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="NPU-Z7-vfY" id="het-Hv-Ld0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ghe-0N-KbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
